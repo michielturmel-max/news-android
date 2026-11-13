@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nl.michiel.nieuws">
+
+    <!-- Alleen internet. Geen telefoon-, contact- of opslagrechten: de app
+         hoeft geen enkel privilege en bewaart alles in het eigen
+         app-bestandsysteem. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Nieuws"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nieuws">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Nieuws">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

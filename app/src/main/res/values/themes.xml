@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Geen AppCompat: die levert een zware dependency-tree en de app gebruikt
+         geen widgets waarvoor AppCompat nodig is. Alleen het platformthema. -->
+    <style name="Theme.Nieuws" parent="@android:style/Theme.Material.Light.DarkActionBar" />
+</resources>
